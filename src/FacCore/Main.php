@@ -24,7 +24,7 @@ class Main extends PluginBase implements Listener {
 	/** @var Config $IPLocks */
 	private $IPLocks;
 	public function onLoad() {
-		$this->getLogger()->notice(TextFormat::GREEN . "Starting Factions Core");
+		$this->getLogger()->notice(TextFormat::GREEN . "Starting SkyBlock Core");
 		$this->saveDefaultConfig();
 		$this->saveResource("profanity.yml");
 		$this->IPLocks = new Config($this->getDataFolder()."IPLocker.yml");
